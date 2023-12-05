@@ -23,6 +23,7 @@ import androidx.compose.material3.Text
 import androidx.compose.material3.TopAppBarDefaults
 import androidx.compose.runtime.Composable
 import androidx.compose.runtime.collectAsState
+import androidx.compose.runtime.getValue
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.input.nestedscroll.nestedScroll
@@ -35,6 +36,11 @@ import com.example.roomdatabase.R
 import com.example.roomdatabase.data.Siswa
 import com.example.roomdatabase.model.HomeViewModel
 import com.example.roomdatabase.model.PenyediaViewModel
+
+object DestinasiHome : DestinasiNavigasi{
+    override val route = "home"
+    override val titleRes = R.string.app_name
+}
 
 @OptIn(ExperimentalMaterial3Api::class)
 @Composable
