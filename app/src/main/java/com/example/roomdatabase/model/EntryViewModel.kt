@@ -7,7 +7,7 @@ import androidx.lifecycle.ViewModel
 import com.example.roomdatabase.repositori.RepositoriSiswa
 
 
-class EntryViewModel(private val repositorySiswa: RepositoriSiswa): ViewModel(){
+class EntryViewModel(private val repositoriSiswa: RepositoriSiswa): ViewModel(){
 
     /**
      * Berisi status Siswa saat ini
@@ -30,7 +30,9 @@ class EntryViewModel(private val repositorySiswa: RepositoriSiswa): ViewModel(){
     /* Fungsi untuk menyimpan data yang di -entry */
     suspend fun saveSiswa(){
         if (validasiInput()){
-            repositorySiswa.insertSiswa(uiStateSiswa.detailSiswa.toSiswa())
+            repositoriSiswa.insertSiswa(uiStateSiswa.detailSiswa.toSiswa())
         }
     }
 }
+
+
