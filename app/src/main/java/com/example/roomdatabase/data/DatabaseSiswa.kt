@@ -19,7 +19,7 @@ abstract class DatabaseSiswa : RoomDatabase(){
                 Room.databaseBuilder(context,
                     DatabaseSiswa::class.java,
                     "siswa_database")
-                    .build().also { Instance=it }
+                    .build().also { Instance= it }
             })
         }
     }
