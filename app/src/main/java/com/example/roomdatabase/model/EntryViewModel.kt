@@ -7,7 +7,7 @@ import androidx.lifecycle.ViewModel
 import com.example.roomdatabase.repositori.RepositoriSiswa
 
 
-class EntryViewModel(private val repositorySiswa: RepositorySiswa): ViewModel(){
+class EntryViewModel(private val repositorySiswa: RepositoriSiswa): ViewModel(){
 
     /**
      * Berisi status Siswa saat ini
