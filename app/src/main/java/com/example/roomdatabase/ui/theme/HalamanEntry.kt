@@ -26,6 +26,7 @@ import androidx.lifecycle.viewmodel.compose.viewModel
 import com.example.roomdatabase.R
 import com.example.roomdatabase.model.EntryViewModel
 import com.example.roomdatabase.model.PenyediaViewModel
+import com.example.roomdatabase.navigasi.DestinasiNavigasi
 import kotlinx.coroutines.launch
 
 object DestinasiEntry: DestinasiNavigasi {
