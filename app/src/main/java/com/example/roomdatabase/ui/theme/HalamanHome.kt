@@ -36,8 +36,10 @@ import com.example.roomdatabase.R
 import com.example.roomdatabase.data.Siswa
 import com.example.roomdatabase.model.HomeViewModel
 import com.example.roomdatabase.model.PenyediaViewModel
+import com.example.roomdatabase.navigasi.DestinasiNavigasi
+import com.example.roomdatabase.navigasi.SiswaTopAppBar
 
-object DestinasiHome : DestinasiNavigasi{
+object DestinasiHome : DestinasiNavigasi {
     override val route = "home"
     override val titleRes = R.string.app_name
 }
